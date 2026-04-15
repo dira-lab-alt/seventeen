@@ -1,0 +1,249 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEVENTEEN - Landing Page</title>
+    <style>
+        /* CSS UNTUK TAMPILAN */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fdfbf7;
+            color: #444;
+        }
+
+        /* Navigasi */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: #d195af; /* Pinkish tone dari fotomu */
+            color: white;
+        }
+
+        nav .logo {
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section (Sesuai fotomu) */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(135deg, #f7cac9 0%, #91a8d0 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            letter-spacing: 10px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn-explore {
+            padding: 12px 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn-explore:hover {
+            background-color: white;
+            color: #91a8d0;
+        }
+
+        /* Member Section */
+        .member-section {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 50px;
+            color: #91a8d0;
+            letter-spacing: 3px;
+        }
+
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .member-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-bottom: 4px solid #f7cac9;
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .member-img {
+            width: 100%;
+            height: 280px;
+            background-color: #eee;
+            object-fit: cover;
+        }
+
+        .member-info {
+            padding: 20px;
+        }
+
+        .member-info h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .member-info p {
+            font-size: 0.8rem;
+            color: #777;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        footer {
+            padding: 40px;
+            background: #333;
+            color: white;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SEVENTEEN</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#">Albums</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h2>Say The Name</h2>
+        <h1>SEVENTEEN</h1>
+        <p>Self-producing K-pop group with 13 members, 3 units, 1 team.</p>
+        <a href="#members" class="btn-explore">Explore More</a>
+    </header>
+
+    <section id="members" class="member-section">
+        <h2 class="section-title">MEET THE MEMBERS</h2>
+        <div class="member-grid">
+            
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=S.Coups" class="member-img" alt="S.Coups">
+                <div class="member-info"><h3>S.COUPS</h3><p>Leader, Hip Hop Team</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Wonwoo" class="member-img" alt="Wonwoo">
+                <div class="member-info"><h3>WONWOO</h3><p>Hip Hop Team</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Mingyu" class="member-img" alt="Mingyu">
+                <div class="member-info"><h3>MINGYU</h3><p>Hip Hop Team</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Vernon" class="member-img" alt="Vernon">
+                <div class="member-info"><h3>VERNON</h3><p>Hip Hop Team</p></div>
+            </div>
+
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Woozi" class="member-img" alt="Woozi">
+                <div class="member-info"><h3>WOOZI</h3><p>Vocal Team Leader</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Jeonghan" class="member-img" alt="Jeonghan">
+                <div class="member-info"><h3>JEONGHAN</h3><p>Vocal Team</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Joshua" class="member-img" alt="Joshua">
+                <div class="member-info"><h3>JOSHUA</h3><p>Vocal Team</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=DK" class="member-img" alt="DK">
+                <div class="member-info"><h3>DK</h3><p>Vocal Team</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Seungkwan" class="member-img" alt="Seungkwan">
+                <div class="member-info"><h3>SEUNGKWAN</h3><p>Vocal Team</p></div>
+            </div>
+
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Hoshi" class="member-img" alt="Hoshi">
+                <div class="member-info"><h3>HOSHI</h3><p>Performance Team Leader</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Jun" class="member-img" alt="Jun">
+                <div class="member-info"><h3>JUN</h3><p>Performance Team</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=The8" class="member-img" alt="The8">
+                <div class="member-info"><h3>THE8</h3><p>Performance Team</p></div>
+            </div>
+            <div class="member-card">
+                <img src="https://via.placeholder.com/300x400?text=Dino" class="member-img" alt="Dino">
+                <div class="member-info"><h3>DINO</h3><p>Performance Team</p></div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Seventeen Official Page - Proyek PNF UNNES</p>
+    </footer>
+
+</body>
+</html>
